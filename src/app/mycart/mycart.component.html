@@ -1,0 +1,29 @@
+<h1>Groci Store</h1>
+<h2>My Cart</h2>{{username}}
+
+<div class="container">
+    <form #f="ngForm">
+        TOTAL COST:{{totalCost}}
+        <div *ngFor="let p of productsInCart" class="c">
+
+            <img src="{{p.image}}" alt="{{p.productName}} image"><br>
+            <h3>{{p.productName}}</h3><br>
+            {{p.description}}<br>
+            Cost:₹{{p.cost}}<br><br>
+            <button class="btn btn-primary" (click)="remove(username,p.productId)">remove</button>
+        </div>
+    </form>
+    <button class="btn btn-primary" (click)="placeOrder(username,productsInCart)">Place Order</button>
+
+</div>
+
+
+
+<button class="form-control" class="btn btn-success"><a href="http://localhost:4200/">Back to Customer</a></button>
+
+
+<hr>
+<h4>Delivery Address: </h4>
+<nav>
+    <button class="form-control" class="btn btn-warning"><a routerLink="/address">change Address</a></button>
+</nav>

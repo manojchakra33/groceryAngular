@@ -1,0 +1,31 @@
+<div class="container">
+  <H1>ADMIN</H1>
+  <a routerLink="addCategory">ADD CATEGORY</a><br>
+  <a routerLink="regproduct">ADD PRODUCT</a><br>
+  <a routerLink="product">PRODUCTS</a><br>
+
+
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+
+<!-- <p>reg-category works!</p>
+<nav>
+    Category name:<input type="text" name="name" [(ngModel)]="categoryName"><br>
+    <input type="submit" value="save" (click)="save(categoryName)">
+</nav> 
+
+
+categoryName:any="";
+  constructor(private util:UtilService) { }
+
+save(categoryName:any){
+    let res=this.util.save(categoryName)
+    res.subscribe((data)=>console.log(data))
+     console.log(this.categoryName);
+  }
+
+-->

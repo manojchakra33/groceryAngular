@@ -1,0 +1,57 @@
+#bg{
+    background-color: rgb(1, 13, 80);
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color: burlywood;
+}
+
+h1 {
+    position:absolute;
+    padding-left: 41%;
+    padding-top: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+#reg {
+    position: relative;
+    top:45px;
+    margin-left: 80%;
+    color: white;
+}
+
+p{
+    position: relative;
+    top:22px;
+    margin-left:93%;
+    color: white;
+
+}
+
+#searchbar {
+    margin-left: 40%;
+
+}
+
+#search{
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#align{
+    padding-right: 50px;
+}
+
+
+
+footer {
+    background-color: rgb(133, 0, 0);
+    padding: 10px;
+  }
+

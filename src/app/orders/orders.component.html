@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>YOURS ORDERS</h1>
+    <ul>
+        <li *ngFor="let o of orders">
+            <div>
+                OrderId: {{o.orderId}}
+                TotatCost:{{totalCost}}<br>
+                ITEMS:<br>
+                <div *ngFor="let p of o.product">
+                    <div>
+                        <img src="{{p.image}}"><br>
+                        {{p.productName}}
+                        Cost:{{p.cost}}
+
+                    </div>
+
+                    {{addTotalCost(p.cost)}}
+                </div>
+                {{totalCostZero()}}
+            </div>
+        </li>
+    </ul>
+
+
+</div>
